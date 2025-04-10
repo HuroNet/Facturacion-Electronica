@@ -4,7 +4,9 @@
   "description": "",
   "main": "src/main.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon src/main.ts",
+    "start": "npm run build && node dist/main.js",
+    "build": "tsc"
   },
   "keywords": [
     "express",
