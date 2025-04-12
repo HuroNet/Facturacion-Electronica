@@ -12,13 +12,11 @@ class Server {
     this.port = 3000;
   }
 
-
   private initializeRoutes() {
     this.app.get("/", (req, res) => {
       res.send("Hola desde la Facturacion");
     });
   }
-
 
   listen() {
     this.app.listen(this.port, () => {
